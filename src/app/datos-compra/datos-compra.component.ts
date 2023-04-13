@@ -16,9 +16,10 @@ export class DatosCompraComponent {
   infoProductos:boolean=false
   resultado:string=""
   enviarDatos(){
-    this.resultado=" Correo:"+this.correo+" Dirección: "+this.direccion+
-    " Teléfono: "+this.telefono+" Comunidad: "+this.comunidad+
-    " Forma de Pago: "+this.fPago+" Acepta información Productos: "+this.infoProductos
+    this.resultado=" Correo:"+this.correo+", Dirección: "+this.direccion+
+    ", Teléfono: "+this.telefono+", Comunidad: "+this.comunidad+
+    ", Forma de Pago: "+this.fPago+", Acepta información Productos: "+
+    (this.infoProductos?"Aceptado":"No aceptado")
 
   }
 
