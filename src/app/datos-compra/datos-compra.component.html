@@ -1,0 +1,24 @@
+<h1>Datos de Compra</h1>
+
+<p>Correo electrónico: <input type="text" placeholder="Escriba su correo electrónico"[(ngModel)]="correo"></p>
+<p>Dirección: 
+<textarea type="textarea" rows="10" cols="40" placeholder="Escriba su dirección" [(ngModel)]="direccion"></textarea>
+</p>
+<p>Telefono <input type="text" placeholder="Escriba su telefono" [(ngModel)]="telefono"></p>
+<p>Comunidad <select [(ngModel)]="comunidad">
+    <option value="Madrid">Madrid</option>
+    <option value="Valencia">Valencia</option>
+    <option value="Barcelona">Barcelona</option>
+</select>
+
+<p>Forma de pago 
+    <input type="radio" name="forma_pago" value="Efectivo" [(ngModel)]="fPago" />Efectivo
+    <input type="radio" name="forma_pago" value="Tarjeta" [(ngModel)]="fPago"/>Tarjeta
+    <input type="radio" name="forma_pago" value="CReembolso" [(ngModel)]="fPago"/>Contra reembolso</p>
+
+<input type="checkbox" [(ngModel)]="infoProductos"/>Acepta recibir información de nuestros productos
+<br>
+<button (click)="enviarDatos()">Enviar</button>
+<p>Datos de Compra => {{resultado}}</p>
+
+
